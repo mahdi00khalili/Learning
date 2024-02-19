@@ -1,0 +1,11 @@
+run the rust server: cargo run
+run the python server: python3 manage.py runserver
+
+-test
+
+for rust: ab -n 9000  http://127.0.0.1:8080/index   
+for python: ab -n 2300  http://127.0.0.1:8000/index
+
+
+Actix in 5 seconds : 10000 reqeusts
+Django in 5 seconds : 2300 reqeusts
