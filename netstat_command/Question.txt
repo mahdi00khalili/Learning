@@ -1,0 +1,3 @@
+what are these commands?
+netstat -tpln
+netstat -tpn | grep ESTABLISHED

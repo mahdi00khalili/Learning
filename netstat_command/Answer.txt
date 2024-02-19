@@ -1,0 +1,28 @@
+1. discussion about the first command :  netstat -tpln
+
+netstat -tpln
+
+_ this command monitors tcp network connections. 
+_ in the result we can see the PID and name of the program.
+_ in the result we can see the IP:PORT pairs.
+_ in the result we can see listening ports. 
+
+example :
+
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -  
+
+
+2. discussion about the second command : netstat -tpn | grep ESTABLISHED
+
+at the first :
+
+_ this command monitors tcp network connections.
+_ in the result we can see the PID and name of the program.
+_ in the result we can see the IP:PORT pairs.
+
+then : 
+
+_ This shows all the network connections that are established. in other hands it means that the TCP handshake has been completedf or this connections.
+
+
