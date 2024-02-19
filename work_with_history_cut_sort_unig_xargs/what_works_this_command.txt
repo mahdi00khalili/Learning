@@ -1,0 +1,9 @@
+history | cut -c 8- | cut -f1 -d' ' | sort | uniq | xargs -L1 whatis 2> /dev/null
+
+step1: history          >>> history of commnads in the terminal
+step2: cut -c 8-        >>> for each line , get characters from 8 index to end of line
+step3: cut -f1 -d' '    >>> split each line by ' ' and then get field 1; result is the command name
+step4: sort             >>> sort command names.
+step5: uniq             >>> remove duplicates
+step5: xargs -L1 wahtis >>> run the `whatis` command , for each item. to show a short description.
+step6: 2>/dev/null      >>> sending errors to trash
