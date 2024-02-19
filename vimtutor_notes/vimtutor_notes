@@ -1,0 +1,217 @@
+in the name of god....
+
+..............................................
+
+* Lesson 1.1: MOVING THE CURSOR *
+
+- h right
+- j down
+- k up
+- l left
+
+* Lesson 1.2: EXITING VIM *
+
+- :q! exit , discard changes
+
+* Lesson 1.3: TEXT EDITING - DELETION *
+
+- x delete the character under curser
+
+* Lesson 1.4: TEXT EDITING - INSERTION *
+
+- i go to insert mode, to adding text
+
+note: esc go to normal mode.
+
+* Lesson 1.5: TEXT EDITING - APPENDING *
+
+- A append text to the end of line.
+
+* Lesson 1.6: EDITING A FILE *
+
+- :wq exit. save changes.
+
+..............................................
+
+* Lesson 2.1: DELETION COMMANDS *
+
+- dw delete a word
+
+* Lesson 2.2: MORE DELETION COMMANDS *
+
+- d$ delete to the end of line
+
+* Lesson 2.3: ON OPERATORS AND MOTIONS *
+
+- pattern operation motion
+
+                 d         w       delete  until the start of the next word.
+                 d         e       delete to the end of current word.
+                 d         $       delete to the end of current line.
+
+* Lesson 2.4: USING A COUNT FOR A MOTION *
+
+- pattern motion number
+
+                2         w       move the curser 2 words forward.
+                3         e       move the cursor to the end of the third word forward.
+                0                 move to start of the line.
+
+* Lesson 2.5: USING A COUNT TO DELETE MORE *
+
+- pattern1 operation motion number
+
+                  d        2        w           delete 2 words
+
+- pattern2 number operation
+
+                 2          dd                  delete 2 lines
+
+* Lesson 2.7: THE UNDO COMMAND *
+
+- u undo
+
+..............................................
+
+* Lesson 3.1: THE PUT COMMAND *
+
+- like cut and paste
+
+step1 go to source
+step2 dd
+step3 go to destination
+step4 p
+
+* Lesson 3.2: THE REPLACE COMMAND *
+
+- r move curser on the character
+  press r
+  insert new character
+
+* Lesson 3.3: THE CHANGE OPERATOR *
+
+- ce clear to the end of this word
+
+..............................................
+
+* Lesson 4.1: CURSOR LOCATION AND FILE STATUS *
+
+- CTRL-g       show the cursers location at the buttom of page.
+- G            go to end of the file.
+- gg           go to start of the file.
+- number G     go to the line with (number) number
+
+ 
+..............................................
+
+* Lesson 4.2: THE SEARCH COMMAND *
+
+- /phrase   searchs the phrase.
+- ?phrase   searchs the phrase in the backward direction. 
+
+- n         searchs next phrase. (according to direction)
+- N         searches prev phrase. (according to direction)
+
+
+- CTRL+o     To go back to where you came from.
+- CTRL+I     goes forward.
+
+
+..............................................
+
+* Lesson 4.3: MATCHING PARENTHESES SEARCH *
+
+step1: Place the cursor on [ or ( or { or  } or ] or ) .
+step2: presss % 
+Place
+result: finds the characters partner.
+
+..............................................
+
+* Lesson 4.4: THE SUBSTITUTE COMMAND *
+
+- :s/old/new    replaces the first ocuuerance old in the current line to new. 
+- :s/old/new/g  replaces all of the old s in the current line to new.
+
+- :#,##s/old/new/g replaces all of the old s, between # and ## lines.
+- :%s/old/new/g     replace all of the old s in the file.
+- :%s/old/new/gc    like prev but with a prompt whether to substitute or not.
+
+
+
+..............................................
+
+* Lesson 5.1: HOW TO EXECUTE AN EXTERNAL COMMAND *
+
+- :!command    run a command.
+
+example  :!ls  
+
+
+
+* Lesson 5.2: MORE ON WRITING FILES *
+
+- :w path_and_filename      saves the currecnt file in the given path with the given filename.
+
+- :!rm path_and_filename    removes the saved file.
+
+
+* Lesson 5.3: SELECTING TEXT TO WRITE *
+
+to save a part of the currect file to another file do this steps:
+
+step one   >>>>    Place the curser at the first of this part.
+step two   >>>>    press v
+step three >>>>    move the curser to the end of this part
+step four  >>>>    press :
+step five  >>>>    press w filename
+step six   >>>>    press enter
+
+
+your file is created.
+
+note : you can press d to delete selected part.
+
+
+* Lesson 5.4: RETRIEVING AND MERGING FILES *
+
+you can add the content of a file to this file:
+
+step one  >>>>   Place the curser on the destination
+step two  >>>>   :r filename
+
+note : you can add the stdout of a command to this file. 
+
+	:r !ls
+
+.............................................
+
+* Lesson 6.1: THE OPEN COMMAND *
+
+- o         create a new empty line BELOW and go to insert mode.
+- CTRL+O    create a new empty line ABOVE and go to insert mode. 
+
+
+* Lesson 6.2: THE APPEND COMMAND * 
+
+- A         insert text to end of the line. 
+- a         insert text to after the cursor.
+
+* Lesson 6.3: ANOTHER WAY TO REPLACE  *
+
+- R         go to replace mode. press ENTER to go to normal mode.
+
+* Lesson 6.4: COPY AND PASTE TEXT *  
+
+- like copy and paste
+
+step1 go to source
+step2 select the resource with v. 
+step3 press y to copy(yarn).
+step4 go to destination
+step4 p
+
+
+
+..................................
+
