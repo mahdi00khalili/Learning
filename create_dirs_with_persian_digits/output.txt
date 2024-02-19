@@ -1,0 +1,13 @@
+output ...............................
+
+Directory '۱' created successfully.
+...
+Directory '...' created successfully.
+...
+Directory '۹۹۹۹۹۸۰۰۰۰۰۱' created successfully.
+
+Running time: 221.6508355140686 seconds
+
+...........................................................
+
+to display results in terminal >>>  find path -type d | wc -l
