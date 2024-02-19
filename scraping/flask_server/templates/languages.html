@@ -1,0 +1,59 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold me-5" href="./">{{header}}</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./chapters"
+            >Chapters</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./langs"
+            >languages</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./about"
+            >about</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end of header -->
+
+
+
+<div class="container mt-3">
+  <div class="card mt-5">
+    <div class="card-header fw-bold">languages that are supported</div>
+    <ul class="list-group list-group-flush">
+      {% for key, value in footer_data.languages_link.items() %}
+         <li class="list-group-item"><a href="https://12factor.net/{{key}}/">{{key}} : {{value}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+<!-- content -->
+
+<!-- end of content -->
+
+{% endblock %}
