@@ -40,6 +40,7 @@ note: esc go to normal mode.
 * Lesson 2.2: MORE DELETION COMMANDS *
 
 - d$ delete to the end of line
+- d0 delete from under the curser to the start of the line.
 
 * Lesson 2.3: ON OPERATORS AND MOTIONS *
 
@@ -211,7 +212,56 @@ step3 press y to copy(yarn).
 step4 go to destination
 step4 p
 
+* Lesson 6.5: SET OPTION  *
+
+search or substitute operations ignore case sensitivity.
+
+- :set ic             >>>  stands for Ignore case
+- :set noic           >>>  to disable ignoring case
+
+** If you want to ignore case for just one search command, use  \c
+       in the phrase:  /ignore\c <ENTER>
+
+- :set hlsearch       >>> stands for highlight search
+- :nohlsearch         >>> To disable highlighting of search matches
+- :set incsearch      >>> stands for incremental search
+- :set noincsearch    >>> To disable incremental search 
 
 
 ..................................
+
+* Lesson 7.1: GETTING HELP  *
+
+- press the <F1> key
+- type   :help <ENTER>
+- press the <HELP> key (if you have one)
+
+if you now are in the help widow:
+
+- Type  CTRL-W CTRL-W   to jump from one window to another.
+- Type    :q <ENTER>    to close the help window.
+
+other way for using the help:
+
+:help w
+:help c_CTRL-D
+:help insert-index
+:help user-manual
+
+
+
+* Lesson 7.2: CREATE A STARTUP SCRIPT *
+
+Vim has many more features than Vi, but most of them are disabled by
+default.  To start using more features you have to create a "vimrc" file
+
+
+
+* Lesson 7.3: COMPLETION *
+
+- <tab>    >>> autocompletes a command or filename or etc.
+- <ctrl+d> >>> displays a list of commands or filename or etc, that start with the letters you've typed.
+
+..................................
+
 
