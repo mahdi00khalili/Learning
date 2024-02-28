@@ -1,0 +1,53 @@
+
+1. how to delete a random row from a table in postgresql?
+
+DELETE FROM table_name
+WHERE id_column IN (
+    SELECT id_column
+    FROM table_name
+    ORDER BY random()
+    LIMIT 1
+);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2. how to delete all rows except 1 random row in postgresql?
+
+DELETE FROM table_name
+WHERE id_column NOT IN (
+    SELECT id_column
+    FROM table_name
+    ORDER BY random()
+    LIMIT 1
+);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+3. how to create a table from two similar tables? (containing data from the two tables)
+
+CREATE TABLE combined_table AS
+SELECT * FROM table1
+UNION ALL
+SELECT * FROM table2;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+how to delete all rows of all tables in public schema?
+
+
+how to clone a postgresql database with a new name?
+
+
+how to create a table with 10m rows with a single statement?
+
+
+we have a table which all of its columns are numeric, we can imagine that this table is a matrix. how to compute the sum of all cells of this matrix?
+
+
+how to create a table which can't have more than 1 rows?
+
+
+how to create a table which has single column and fill this table with 10000 first prime numbers (each in one row) ?
+
+
+how to create a table with 10000 columns?
+
+
+how to create a virtual table with 10000 columns?
