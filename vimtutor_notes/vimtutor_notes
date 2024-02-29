@@ -190,7 +190,7 @@ note : you can add the stdout of a command to this file.
 * Lesson 6.1: THE OPEN COMMAND *
 
 - o         create a new empty line BELOW and go to insert mode.
-- CTRL+O    create a new empty line ABOVE and go to insert mode. 
+- SHIFT+o    create a new empty line ABOVE and go to insert mode. 
 
 
 * Lesson 6.2: THE APPEND COMMAND * 
